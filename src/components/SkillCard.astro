@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+<article class=`
+p-6 m-6
+lg:w-[500px]
+border rounded-lg
+bg-neutral-600/10
+shadow-md
+hover:bg-slate-100/10 transition duration-300
+`>
+  <h3 class="flex justify-center text-xl font-semibold pb-8">{title}</h3>
+  <span class=`grid grid-cols-3 justify-items-center gap-4`>
+    <slot />
+  </span>
+</article>

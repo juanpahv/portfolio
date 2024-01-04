@@ -1,0 +1,119 @@
+---
+import SkillCard from "./SkillCard.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+import BootstrapIcon from "./icons/BootstrapIcon.astro";
+import CSSIcon from "./icons/CSSIcon.astro";
+import DjangoIcon from "./icons/DjangoIcon.astro";
+import HTMLIcon from "./icons/HTMLIcon.astro";
+import JavaIcon from "./icons/JavaIcon.astro";
+import JavascriptIcon from "./icons/JavascriptIcon.astro";
+import PythonIcon from "./icons/PythonIcon.astro";
+import ReactIcon from "./icons/ReactIcon.astro";
+import TailwindIcon from "./icons/TailwindIcon.astro";
+import TypescriptIcon from "./icons/TypescriptIcon.astro";
+import NextjsIcon from "./icons/NextjsIcon.astro";
+import GitIcon from "./icons/GitIcon.astro";
+import NodejsIcon from "./icons/NodejsIcon.astro";
+import MySQLIcon from "./icons/MySQLIcon.astro";
+const languages = [
+  {
+    name: "HTML",
+    icon: HTMLIcon,
+  },
+  {
+    name: "CSS",
+    icon: CSSIcon,
+  },
+  {
+    name: "JavaScript",
+    icon: JavascriptIcon,
+  },
+  {
+    name: "TypeScript",
+    icon: TypescriptIcon,
+  },
+  {
+    name: "Java",
+    icon: JavaIcon,
+  },
+  {
+    name: "Python",
+    icon: PythonIcon,
+  },
+];
+
+const frameworks = [
+  {
+    name: "React",
+    icon: ReactIcon,
+  },
+  {
+    name: "Next.js",
+    icon: NextjsIcon,
+  },
+  {
+    name: "Django",
+    icon: DjangoIcon,
+  },
+  {
+    name: "TailwindCSS",
+    icon: TailwindIcon,
+  },
+  {
+    name: "Bootstrap",
+    icon: BootstrapIcon,
+  },
+  {
+    name: "Astro",
+    icon: AstroIcon,
+  },
+];
+
+const software = [
+  {
+    name: "Git",
+    icon: GitIcon,
+  },
+  {
+    name: "Node.js",
+    icon: NodejsIcon,
+  },
+  {
+    name: "MySQL",
+    icon: MySQLIcon,
+  },
+];
+---
+
+<SkillCard title="Languages">
+  {
+    languages.map((language) => (
+      <span class="text-lg flex flex-col items-center gap-6 pb-6">
+        <language.icon class="size-8" />
+        {language.name}
+      </span>
+    ))
+  }
+</SkillCard>
+
+<SkillCard title="Frameworks / Libraries">
+  {
+    frameworks.map((framework) => (
+      <span class="text-lg flex flex-col items-center gap-6 pb-6">
+        <framework.icon class="size-8" />
+        {framework.name}
+      </span>
+    ))
+  }
+</SkillCard>
+
+<SkillCard title="Software / Tools / Others">
+  {
+    software.map((software) => (
+      <span class="text-lg flex flex-col items-center gap-6 pb-6">
+        <software.icon class="size-8" />
+        {software.name}
+      </span>
+    ))
+  }
+</SkillCard>
