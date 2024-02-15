@@ -7,14 +7,13 @@ import {
 } from "@/components/ui/card"
 import { CarouselItem } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge"
-import Pill from "./Pill.astro";
 
 const projects = [
   {
     title: "Auth-app",
-    footer: "Web page for user authentication. A user can create an account, login, and request a password reset. The backend is built with Express and the frontend with React. The database is MySQL. The app uses JWT for authentication and Nodemailer for sending emails.",
+    footer: "API RESTful built with Express and the frontend with React. A user can create an account, login, and request a password reset. The app uses JWT for authentication and Nodemailer for sending emails.",
     image: "../images/wiki.png",
-    repo: "",
+    repo: "https://github.com/juanpahv/auth-wiki-app",
     badges: ["Typescript","React","Express","JWT","Nodemailer","MySQL"],
   },
   {
