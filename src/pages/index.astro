@@ -2,14 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import GithubIcon from "../components/icons/GithubIcon.astro";
 import LinkedInIcon from "../components/icons/LinkedInIcon.astro";
-import BooksIcon from "../components/icons/BooksIcon.astro";
-import UserCodeIcon from "../components/icons/UserCodeIcon.astro";
 import Pill from "../components/Pill.astro";
-import Education from "../components/Education.astro";
-import Me from "../components/Me.astro";
+import About from "../components/About.astro";
 import Skills from "../components/Skills.astro";
 import SkillsIcon from "../components/icons/SkillsIcon.astro";
 import Header from "../components/Header.astro";
+import ProjectsIcon from "../components/icons/ProjectsIcon.astro";
+import ContactIcon from "../components/icons/ContactIcon.astro";
 import Projects from "@/components/Projects.tsx";
 ---
 
@@ -26,41 +25,38 @@ import Projects from "@/components/Projects.tsx";
         Software and Computer Systems Engineering Student
       </h2>
       <section class="flex gap-x-4 mt-4">
-        <Pill href="https://github.com/juanpahv">
+        <Pill href="https://github.com/juanpahv" target="_blank">
           <GithubIcon class="size-6" /> GitHub
         </Pill>
-        <Pill href="https://www.linkedin.com/in/juanpahv/">
+        <Pill href="https://www.linkedin.com/in/juanpahv/" target="_blank">
           <LinkedInIcon class="size-6" /> LinkedIn
         </Pill>
       </section>
     </section>
     <section id="about" class="flex flex-col gap-y-4 w-full lg:w-[740px] mx-auto mb-40 px-8">
-      <h1 class="flex justify-center items-center text-2xl font-bold">
-        About
-      </h1>
-      <h2 class="flex items-center gap-x-2 text-2xl opacity-50">
-        <UserCodeIcon class="size-6" /> Me
-      </h2>
-      <Me />
-      <h2 class="flex items-center gap-x-2 text-2xl opacity-50 mt-12">
-        <BooksIcon class="size-6" /> Education
-      </h2>
-      <Education />
+      <About />
     </section>
     <section id="skills" class="flex flex-col w-full mx-auto mb-20">
       <h1 class="flex justify-center gap-x-2 items-center text-2xl font-bold">
-        <SkillsIcon class="size-6"/>
+        <SkillsIcon class="size-6" />
         Skills
       </h1>
       <span class="md:grid grid-cols-2 mx-auto">
         <Skills />
       </span>
     </section>
-    <section id="projects" class="flex flex-col justify-center items-center gap-y-4 w-full lg:w-[740px] mx-auto mb-40 px-20">
-      <h1 class="flex justify-center items-center text-2xl font-bold">
+    <section id="projects" class="flex flex-col justify-center items-center gap-y-4 w-full lg:w-[740px] mx-auto mb-40 px-[4rem]">
+      <h1 class="flex justify-center gap-x-2 items-center text-2xl font-bold">
+        <ProjectsIcon class="size-6" />
         Projects
       </h1>
       <Projects client:load />
     </section>
+    <!-- <section>
+      <h1 class="flex justify-center gap-x-2 items-center text-2xl font-bold">
+        <ContactIcon class="size-6" />
+        Contact
+      </h1>
+    </section> -->
   </main>
 </Layout>
