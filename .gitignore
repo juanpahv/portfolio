@@ -20,7 +20,7 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# Docker and nginx
-Dockerfile
-.dockerignore
-nginx/
+# # Docker and nginx
+# Dockerfile
+# .dockerignore
+# nginx/
