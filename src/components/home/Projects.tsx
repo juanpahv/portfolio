@@ -4,7 +4,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import CarouselCard from "@/components/CarouselCard";
+import CarouselCard from "@/components/home/CarouselCard";
 
 function Projects() {
   return (
