@@ -9,10 +9,12 @@ const t = getTranslations(Astro.currentLocale);
     class="flex flex-row justify-center items-center md:px-1 py-1 mx-auto glass"
   >
     <a href="#top" class="hover:bg-white/10 rounded-full px-3 transition">{t("nav.home")}</a>
-    <a href="#education" class="hover:bg-white/10 rounded-full px-3 transition">{t("nav.education")}</a>
     <a href="#experience" class="hover:bg-white/10 rounded-full px-3 transition">{t("nav.experience")}</a>
+    <a href="#education" class="hover:bg-white/10 rounded-full px-3 transition">{t("nav.education")}</a>
     <a href="#skills" class="hover:bg-white/10 rounded-full px-3 transition">{t("nav.skills")}</a>
+    {/* TODO: restore when the projects section is rebuilt
     <a href="#projects" class="hover:bg-white/10 rounded-full px-3 transition">{t("nav.projects")}</a>
+    */}
     <a href="#contact" class="hover:bg-white/10 rounded-full px-3 transition">{t("nav.contact")}</a>
   </nav>
 </header>
