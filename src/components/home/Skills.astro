@@ -15,6 +15,9 @@ import GitIcon from "../icons/GitIcon.astro";
 import NodejsIcon from "../icons/NodejsIcon.astro";
 import MySQLIcon from "../icons/MySQLIcon.astro";
 import ExpressIcon from "../icons/ExpressIcon.astro";
+import { useTranslations } from "@/i18n/ui";
+
+const t = useTranslations(Astro.currentLocale);
 const languages = [
   {
     name: "HTML",
@@ -85,7 +88,7 @@ const software = [
 ];
 ---
 
-<SkillCard title="Languages">
+<SkillCard title={t("skills.languages")}>
   {
     languages.map((language) => (
       <span class="text-lg flex flex-col items-center gap-6 pb-6">
@@ -96,7 +99,7 @@ const software = [
   }
 </SkillCard>
 
-<SkillCard title="Frameworks / Libraries">
+<SkillCard title={t("skills.frameworks")}>
   {
     frameworks.map((framework) => (
       <span class="text-lg flex flex-col items-center gap-6 pb-6">
@@ -107,7 +110,7 @@ const software = [
   }
 </SkillCard>
 
-<SkillCard title="Software / Tools / Others">
+<SkillCard title={t("skills.software")}>
   {
     software.map((software) => (
       <span class="text-lg flex flex-col items-center gap-6 pb-6">

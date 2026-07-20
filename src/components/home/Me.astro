@@ -1,9 +1,15 @@
+---
+import { useTranslations } from "@/i18n/ui";
+
+const t = useTranslations(Astro.currentLocale);
+const bio = t("about.bio");
+const highlight = t("about.bioHighlight");
+// ponytail: single highlighted phrase per locale; if copy needs richer markup, move the bio to a content collection
+const [before, after] = bio.split(highlight);
+---
+
 <article>
   <p class="text-xl text-pretty">
-    I'm passionate about computer science, technology and software development,
-    the area I want to focus is <strong>full-stack web development</strong>. I'm
-    always willing and searching to learn anything new, I push myself to improve my skills and
-    problem solving abilities, as well, I'm a self-taught person. I'm also interested in entrepreneurship and
-    startups.
+    {before}<strong>{highlight}</strong>{after}
   </p>
 </article>

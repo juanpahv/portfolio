@@ -1,0 +1,50 @@
+---
+import WorldIcon from "../icons/WorldIcon.astro";
+import { getLang, useTranslations } from "@/i18n/ui";
+
+const lang = getLang(Astro.currentLocale);
+const t = useTranslations(lang);
+
+const options = [
+  { code: "es", label: "ES", href: "/" },
+  { code: "en", label: "EN", href: "/en/" },
+] as const;
+---
+
+<div class="fixed top-4 right-4 z-[1001]">
+  <nav aria-label={t("lang.label")} class="flex items-center gap-x-1 py-1 pl-2 pr-1 glass">
+    <WorldIcon class="size-4 opacity-60" aria-hidden="true" />
+    {
+      options.map(({ code, label, href }) =>
+        code === lang ? (
+          <span
+            class="rounded-full px-2 py-0.5 text-sm font-semibold bg-white/20"
+            aria-current="true"
+          >
+            {label}
+          </span>
+        ) : (
+          <a
+            href={href}
+            hreflang={code}
+            lang={code}
+            class="rounded-full px-2 py-0.5 text-sm opacity-60 hover:opacity-100 hover:bg-white/10 transition"
+          >
+            {label}
+          </a>
+        )
+      )
+    }
+  </nav>
+</div>
+
+<style>
+  .glass {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+</style>

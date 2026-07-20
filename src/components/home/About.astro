@@ -3,16 +3,19 @@ import UserCodeIcon from '../icons/UserCodeIcon.astro'
 import Me from '../home/Me.astro'
 import BooksIcon from '../icons/BooksIcon.astro'
 import Education from './Education.astro'
+import { useTranslations } from '@/i18n/ui'
+
+const t = useTranslations(Astro.currentLocale)
 ---
 
 <h1 class="flex justify-center items-center text-2xl font-bold">
-  About
+  {t("about.title")}
 </h1>
 <h2 class="flex items-center gap-x-2 text-2xl opacity-50">
-  <UserCodeIcon class="size-6" /> Me
+  <UserCodeIcon class="size-6" /> {t("about.me")}
 </h2>
 <Me />
 <h2 class="flex items-center gap-x-2 text-2xl opacity-50 mt-12">
-  <BooksIcon class="size-6" /> Education
+  <BooksIcon class="size-6" /> {t("about.education")}
 </h2>
 <Education />

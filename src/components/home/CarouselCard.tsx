@@ -33,12 +33,12 @@ function CarouselCard() {
           <CardHeader className="flex justify-center">
             <CardTitle>{title}</CardTitle>
             <span className="hover:underline">
-              <a href={repo} target="_blank">Github</a>
+              <a href={repo} target="_blank" rel="noopener noreferrer">Github</a>
             </span>
             <div className="flex justify-center flex-wrap pt-2">
               {
-              badges.map((badge, index) => (
-                  <Badge key={index} variant="secondary" className="mx-1 mt-2">
+              badges.map((badge) => (
+                  <Badge key={badge} variant="secondary" className="mx-1 mt-2">
                     {badge}
                   </Badge>
                 ))

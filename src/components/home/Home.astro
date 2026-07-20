@@ -1,0 +1,49 @@
+---
+import { ContactIcon } from "lucide-react";
+import About from "./About.astro";
+import Pill from "./Pill.astro";
+import Skills from "./Skills.astro";
+import GithubIcon from "../icons/GithubIcon.astro";
+import LinkedInIcon from "../icons/LinkedInIcon.astro";
+import SkillsIcon from "../icons/SkillsIcon.astro";
+import { useTranslations } from "@/i18n/ui";
+
+const t = useTranslations(Astro.currentLocale);
+---
+
+<main>
+  <section
+    class="flex flex-col items-center justify-center text-center mx-auto gap-y-4 w-full lg:w-[740px] h-[100svh] px-8"
+  >
+    <h1 class="text-4xl font-bold flex justify-center text">
+      Juan Pablo Hernández
+    </h1>
+    <h2 class="text-2xl opacity-50">{t("hero.role")}</h2>
+    <section class="flex gap-x-4 mt-4">
+      <Pill href="https://github.com/juanpahv" target="_blank">
+        <GithubIcon class="size-6" /> GitHub
+      </Pill>
+      <Pill href="https://www.linkedin.com/in/juanpahv/" target="_blank">
+        <LinkedInIcon class="size-6" /> LinkedIn
+      </Pill>
+    </section>
+  </section>
+  <section id="about" class="flex flex-col gap-y-4 w-full lg:w-[740px] mx-auto mb-40 px-8">
+    <About />
+  </section>
+  <section id="skills" class="flex flex-col w-full mx-auto mb-20">
+    <h1 class="flex justify-center gap-x-2 items-center text-2xl font-bold">
+      <SkillsIcon class="size-6" />
+      {t("skills.title")}
+    </h1>
+    <span class="md:grid grid-cols-2 mx-auto">
+      <Skills />
+    </span>
+  </section>
+  <section>
+    <h1 class="flex justify-center gap-x-2 items-center text-2xl font-bold">
+      <ContactIcon className="size-6" />
+      {t("contact.title")}
+    </h1>
+  </section>
+</main>
