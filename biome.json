@@ -3,6 +3,10 @@
 	"files": {
 		"includes": ["src/**", "!dist", "!.astro", "!src/styles/globals.css"]
 	},
+	"formatter": {
+		"indentStyle": "space",
+		"indentWidth": 2
+	},
 	"overrides": [
 		{
 			"includes": ["**/*.css"],

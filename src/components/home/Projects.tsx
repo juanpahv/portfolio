@@ -1,10 +1,10 @@
+import CarouselCard from "@/components/home/CarouselCard";
 import {
   Carousel,
   CarouselContent,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import CarouselCard from "@/components/home/CarouselCard";
 
 function Projects() {
   return (

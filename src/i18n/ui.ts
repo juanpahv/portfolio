@@ -86,9 +86,11 @@ export const ui = {
     "experience.kiin.dates": "Abril 2024 - Febrero 2025",
     "experience.kiin.b1":
       "Desarrollo y mantenimiento de sitios web con JavaScript y WordPress, integración de chatbot, mejora de SEO, mejora de tiempos de carga y rendimiento, creación y mantenimiento de UI/UX.",
-    "experience.kiin.b2": "Configuración de redes para inversores fotovoltaicos.",
+    "experience.kiin.b2":
+      "Configuración de redes para inversores fotovoltaicos.",
     "experience.kiin.b3": "Automatización de procesos de ventas en CRM.",
-    "experience.kiin.b4": "Mantenimiento de equipos de cómputo y soporte de TI.",
+    "experience.kiin.b4":
+      "Mantenimiento de equipos de cómputo y soporte de TI.",
     "skills.title": "Habilidades",
     "skills.languages": "Lenguajes",
     "skills.frameworks": "Frameworks / Librerías",

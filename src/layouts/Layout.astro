@@ -1,7 +1,7 @@
 ---
 import "@fontsource-variable/onest";
 import Footer from "../components/home/Footer.astro";
-import '@/styles/globals.css';
+import "@/styles/globals.css";
 import Header from "@/components/home/Header.astro";
 import LangSwitcher from "@/components/home/LangSwitcher.astro";
 import { getLang, getTranslations } from "@/i18n/ui";
@@ -13,7 +13,8 @@ interface Props {
 
 const lang = getLang(Astro.currentLocale);
 const t = getTranslations(lang);
-const { title = t("meta.title"), description = t("meta.description") } = Astro.props;
+const { title = t("meta.title"), description = t("meta.description") } =
+  Astro.props;
 ---
 
 <!doctype html>

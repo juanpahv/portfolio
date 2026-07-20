@@ -1,14 +1,14 @@
 ---
 import { ContactIcon } from "lucide-react";
-import About from "./About.astro";
-import Experience from "./Experience.astro";
-import Pill from "./Pill.astro";
-import Skills from "./Skills.astro";
+import { getTranslations } from "@/i18n/ui";
 import BriefcaseIcon from "../icons/BriefcaseIcon.astro";
 import GithubIcon from "../icons/GithubIcon.astro";
 import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import SkillsIcon from "../icons/SkillsIcon.astro";
-import { getTranslations } from "@/i18n/ui";
+import About from "./About.astro";
+import Experience from "./Experience.astro";
+import Pill from "./Pill.astro";
+import Skills from "./Skills.astro";
 
 const t = getTranslations(Astro.currentLocale);
 ---
