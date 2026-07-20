@@ -1,3 +1,5 @@
 allowBuilds:
   esbuild: true
   sharp: false
+minimumReleaseAgeExclude:
+  - '@fontsource-variable/onest@5.3.0'
