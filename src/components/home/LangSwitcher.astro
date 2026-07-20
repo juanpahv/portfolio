@@ -1,9 +1,9 @@
 ---
 import WorldIcon from "../icons/WorldIcon.astro";
-import { getLang, useTranslations } from "@/i18n/ui";
+import { getLang, getTranslations } from "@/i18n/ui";
 
 const lang = getLang(Astro.currentLocale);
-const t = useTranslations(lang);
+const t = getTranslations(lang);
 
 const options = [
   { code: "es", label: "ES", href: "/" },

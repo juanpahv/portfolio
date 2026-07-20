@@ -1,0 +1,50 @@
+---
+import { getTranslations } from "@/i18n/ui";
+
+const t = getTranslations(Astro.currentLocale);
+
+const jobs = [
+  {
+    company: "Wicode",
+    role: "experience.wicode.role",
+    dates: "experience.wicode.dates",
+    bullets: [
+      "experience.wicode.b1",
+      "experience.wicode.b2",
+      "experience.wicode.b3",
+    ],
+  },
+  {
+    company: "Kiin Energy",
+    role: "experience.kiin.role",
+    dates: "experience.kiin.dates",
+    bullets: [
+      "experience.kiin.b1",
+      "experience.kiin.b2",
+      "experience.kiin.b3",
+      "experience.kiin.b4",
+    ],
+  },
+] as const;
+---
+
+<div class="flex flex-col gap-y-12">
+  {
+    jobs.map((job) => (
+      <article class="flex flex-col gap-y-2">
+        <div class="flex flex-wrap items-baseline justify-between gap-x-4">
+          <h3 class="text-xl font-bold">{job.company}</h3>
+          <time class="opacity-50">{t(job.dates)}</time>
+        </div>
+        <p class="text-xl font-semibold opacity-80">{t(job.role)}</p>
+        <ul class="flex flex-col gap-y-3 mt-2">
+          {job.bullets.map((bullet) => (
+            <li class="text-lg text-pretty pl-4 border-l border-white/20">
+              {t(bullet)}
+            </li>
+          ))}
+        </ul>
+      </article>
+    ))
+  }
+</div>

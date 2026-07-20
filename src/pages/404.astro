@@ -1,9 +1,9 @@
 ---
 import Pill from "@/components/home/Pill.astro";
 import Layout from "@/layouts/Layout.astro";
-import { useTranslations } from "@/i18n/ui";
+import { getTranslations } from "@/i18n/ui";
 
-const t = useTranslations(Astro.currentLocale);
+const t = getTranslations(Astro.currentLocale);
 ---
 
 <Layout title={t("404.title")}>

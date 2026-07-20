@@ -1,14 +1,16 @@
 ---
 import { ContactIcon } from "lucide-react";
 import About from "./About.astro";
+import Experience from "./Experience.astro";
 import Pill from "./Pill.astro";
 import Skills from "./Skills.astro";
+import BriefcaseIcon from "../icons/BriefcaseIcon.astro";
 import GithubIcon from "../icons/GithubIcon.astro";
 import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import SkillsIcon from "../icons/SkillsIcon.astro";
-import { useTranslations } from "@/i18n/ui";
+import { getTranslations } from "@/i18n/ui";
 
-const t = useTranslations(Astro.currentLocale);
+const t = getTranslations(Astro.currentLocale);
 ---
 
 <main>
@@ -30,6 +32,16 @@ const t = useTranslations(Astro.currentLocale);
   </section>
   <section id="about" class="flex flex-col gap-y-4 w-full lg:w-[740px] mx-auto mb-40 px-8">
     <About />
+  </section>
+  <section
+    id="experience"
+    class="flex flex-col gap-y-8 w-full lg:w-[740px] mx-auto mb-40 px-8"
+  >
+    <h1 class="flex justify-center gap-x-2 items-center text-2xl font-bold">
+      <BriefcaseIcon class="size-6" />
+      {t("experience.title")}
+    </h1>
+    <Experience />
   </section>
   <section id="skills" class="flex flex-col w-full mx-auto mb-20">
     <h1 class="flex justify-center gap-x-2 items-center text-2xl font-bold">

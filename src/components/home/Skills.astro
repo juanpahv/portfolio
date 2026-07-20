@@ -15,9 +15,9 @@ import GitIcon from "../icons/GitIcon.astro";
 import NodejsIcon from "../icons/NodejsIcon.astro";
 import MySQLIcon from "../icons/MySQLIcon.astro";
 import ExpressIcon from "../icons/ExpressIcon.astro";
-import { useTranslations } from "@/i18n/ui";
+import { getTranslations } from "@/i18n/ui";
 
-const t = useTranslations(Astro.currentLocale);
+const t = getTranslations(Astro.currentLocale);
 const languages = [
   {
     name: "HTML",
