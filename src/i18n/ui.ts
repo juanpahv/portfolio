@@ -37,7 +37,7 @@ export const ui = {
     "experience.kiin.b2": "Network configuration for photovoltaic inverters.",
     "experience.kiin.b3": "Sales process automation in CRM.",
     "experience.kiin.b4": "Computer equipment maintenance and IT support.",
-    "skills.title": "Skills",
+    "skills.title": "Specialized Skills",
     "skills.languages": "Languages",
     "skills.frameworks": "Frameworks / Libraries",
     "skills.cloud": "Cloud",
@@ -93,7 +93,7 @@ export const ui = {
     "experience.kiin.b3": "Automatización de procesos de ventas en CRM.",
     "experience.kiin.b4":
       "Mantenimiento de equipos de cómputo y soporte de TI.",
-    "skills.title": "Habilidades",
+    "skills.title": "Habilidades especializadas",
     "skills.languages": "Lenguajes",
     "skills.frameworks": "Frameworks / Librerías",
     "skills.cloud": "Nube",
