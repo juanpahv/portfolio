@@ -1,32 +1,25 @@
 ---
 import { getTranslations } from "@/i18n/ui";
+import AnthropicIcon from "../icons/AnthropicIcon.astro";
 import AstroIcon from "../icons/AstroIcon.astro";
-import BootstrapIcon from "../icons/BootstrapIcon.astro";
-import CSSIcon from "../icons/CSSIcon.astro";
-import DjangoIcon from "../icons/DjangoIcon.astro";
+import AWSIcon from "../icons/AWSIcon.astro";
+import BashIcon from "../icons/BashIcon.astro";
 import ExpressIcon from "../icons/ExpressIcon.astro";
+import GeminiIcon from "../icons/GeminiIcon.astro";
 import GitIcon from "../icons/GitIcon.astro";
-import HTMLIcon from "../icons/HTMLIcon.astro";
+import GoogleCloudIcon from "../icons/GoogleCloudIcon.astro";
 import JavaIcon from "../icons/JavaIcon.astro";
 import JavascriptIcon from "../icons/JavascriptIcon.astro";
 import MySQLIcon from "../icons/MySQLIcon.astro";
 import NodejsIcon from "../icons/NodejsIcon.astro";
+import PostgreSQLIcon from "../icons/PostgreSQLIcon.astro";
 import PythonIcon from "../icons/PythonIcon.astro";
 import ReactIcon from "../icons/ReactIcon.astro";
-import TailwindIcon from "../icons/TailwindIcon.astro";
 import TypescriptIcon from "../icons/TypescriptIcon.astro";
 import SkillCard from "./SkillCard.astro";
 
 const t = getTranslations(Astro.currentLocale);
 const languages = [
-  {
-    name: "HTML",
-    icon: HTMLIcon,
-  },
-  {
-    name: "CSS",
-    icon: CSSIcon,
-  },
   {
     name: "JavaScript",
     icon: JavascriptIcon,
@@ -55,18 +48,6 @@ const frameworks = [
     icon: ExpressIcon,
   },
   {
-    name: "Django",
-    icon: DjangoIcon,
-  },
-  {
-    name: "TailwindCSS",
-    icon: TailwindIcon,
-  },
-  {
-    name: "Bootstrap",
-    icon: BootstrapIcon,
-  },
-  {
     name: "Astro",
     icon: AstroIcon,
   },
@@ -74,16 +55,46 @@ const frameworks = [
 
 const software = [
   {
-    name: "Git",
-    icon: GitIcon,
-  },
-  {
     name: "Node.js",
     icon: NodejsIcon,
   },
   {
+    name: "Bash",
+    icon: BashIcon,
+  },
+  {
+    name: "Git",
+    icon: GitIcon,
+  },
+  {
     name: "MySQL",
     icon: MySQLIcon,
+  },
+  {
+    name: "PostgreSQL",
+    icon: PostgreSQLIcon,
+  },
+];
+
+const cloud = [
+  {
+    name: "Google Cloud",
+    icon: GoogleCloudIcon,
+  },
+  {
+    name: "AWS",
+    icon: AWSIcon,
+  },
+];
+
+const ai = [
+  {
+    name: "Vertex AI / Gemini",
+    icon: GeminiIcon,
+  },
+  {
+    name: "Claude",
+    icon: AnthropicIcon,
   },
 ];
 ---
@@ -105,6 +116,28 @@ const software = [
       <span class="text-lg flex flex-col items-center gap-6 pb-6">
         <framework.icon class="size-8" />
         {framework.name}
+      </span>
+    ))
+  }
+</SkillCard>
+
+<SkillCard title={t("skills.cloud")}>
+  {
+    cloud.map((item) => (
+      <span class="text-lg flex flex-col items-center gap-6 pb-6">
+        <item.icon class="size-8" />
+        {item.name}
+      </span>
+    ))
+  }
+</SkillCard>
+
+<SkillCard title={t("skills.ai")}>
+  {
+    ai.map((item) => (
+      <span class="text-lg flex flex-col items-center gap-6 pb-6">
+        <item.icon class="size-8" />
+        {item.name}
       </span>
     ))
   }

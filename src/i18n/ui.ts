@@ -40,6 +40,8 @@ export const ui = {
     "skills.title": "Skills",
     "skills.languages": "Languages",
     "skills.frameworks": "Frameworks / Libraries",
+    "skills.cloud": "Cloud",
+    "skills.ai": "AI",
     "skills.software": "Software / Tools / Others",
     "contact.title": "Contact",
     "contact.intro":
@@ -94,6 +96,8 @@ export const ui = {
     "skills.title": "Habilidades",
     "skills.languages": "Lenguajes",
     "skills.frameworks": "Frameworks / Librerías",
+    "skills.cloud": "Nube",
+    "skills.ai": "IA",
     "skills.software": "Software / Herramientas / Otros",
     "contact.title": "Contacto",
     "contact.intro":
