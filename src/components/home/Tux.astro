@@ -1,0 +1,119 @@
+---
+import { getTranslations } from "@/i18n/ui";
+
+const t = getTranslations(Astro.currentLocale);
+const bio = t("about.bio");
+const highlight = t("about.bioHighlight");
+const [before, after] = bio.split(highlight);
+---
+
+<button
+  type="button"
+  popovertarget="tux-bio"
+  class="tux"
+  aria-label={t("about.title")}
+>
+  <svg viewBox="0 0 100 128" width="96" height="123" aria-hidden="true">
+    <!-- feet -->
+    <ellipse cx="34" cy="118" rx="15" ry="8" fill="#f7a41d"></ellipse>
+    <ellipse cx="66" cy="118" rx="15" ry="8" fill="#f7a41d"></ellipse>
+    <!-- body -->
+    <ellipse cx="50" cy="76" rx="36" ry="44" fill="#1a1a1a"></ellipse>
+    <ellipse cx="50" cy="82" rx="25" ry="36" fill="#fdfdfd"></ellipse>
+    <!-- flippers -->
+    <ellipse cx="14" cy="74" rx="8" ry="20" fill="#1a1a1a" transform="rotate(12 14 74)"></ellipse>
+    <ellipse cx="86" cy="74" rx="8" ry="20" fill="#1a1a1a" transform="rotate(-12 86 74)"></ellipse>
+    <!-- head -->
+    <circle cx="50" cy="34" r="27" fill="#1a1a1a"></circle>
+    <ellipse cx="50" cy="41" rx="19" ry="17" fill="#fdfdfd"></ellipse>
+    <!-- eyes -->
+    <ellipse cx="41" cy="30" rx="6" ry="8" fill="#fdfdfd"></ellipse>
+    <ellipse cx="59" cy="30" rx="6" ry="8" fill="#fdfdfd"></ellipse>
+    <circle cx="43" cy="31" r="3" fill="#1a1a1a"></circle>
+    <circle cx="57" cy="31" r="3" fill="#1a1a1a"></circle>
+    <!-- beak -->
+    <ellipse cx="50" cy="44" rx="9" ry="6" fill="#f7a41d"></ellipse>
+    <path d="M41 44 q9 4 18 0" stroke="#d98c10" stroke-width="1.5" fill="none"></path>
+  </svg>
+</button>
+
+<div id="tux-bio" popover class="bubble">
+  <p class="text-base text-pretty">
+    {before}<strong>{highlight}</strong>{after}
+  </p>
+</div>
+
+<style>
+  .tux {
+    position: fixed;
+    left: 0;
+    bottom: 1.5rem;
+    z-index: 999;
+    /* ponytail: half the sprite sits off-screen; hover peeks it further in */
+    transform: translateX(-50%);
+    transition: transform 300ms ease;
+    cursor: pointer;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+  }
+
+  .tux:hover,
+  .tux:focus-visible {
+    transform: translateX(-18%);
+  }
+
+  .bubble {
+    position: fixed;
+    left: 4.5rem;
+    bottom: 6rem;
+    top: auto;
+    right: auto;
+    margin: 0;
+    max-width: min(24rem, calc(100vw - 6rem));
+    padding: 1rem 1.25rem;
+    color: #fdfdfd;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    overflow: visible;
+  }
+
+  .bubble:popover-open {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  .bubble {
+    opacity: 0;
+    translate: -8px 8px;
+    transition:
+      opacity 200ms ease,
+      translate 200ms ease,
+      display 200ms allow-discrete,
+      overlay 200ms allow-discrete;
+  }
+
+  @starting-style {
+    .bubble:popover-open {
+      opacity: 0;
+      translate: -8px 8px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .bubble {
+      left: 1rem;
+      right: 1rem;
+      max-width: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tux,
+    .bubble {
+      transition: none;
+    }
+  }
+</style>

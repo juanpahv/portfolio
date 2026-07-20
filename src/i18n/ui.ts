@@ -6,14 +6,13 @@ export const ui = {
     "meta.description":
       "Software and Computer Systems Engineer. Full-stack web developer.",
     "nav.home": "Home",
-    "nav.about": "About",
+    "nav.education": "Education",
     "nav.experience": "Experience",
     "nav.skills": "Skills",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
     "hero.role": "Software and Computer Systems Engineer",
     "about.title": "About",
-    "about.me": "Me",
     "about.education": "Education",
     "about.bio":
       "I'm passionate about computer science, technology and software development, the area I want to focus on is full-stack web development. I'm always willing and searching to learn anything new, I push myself to improve my skills and problem solving abilities, and I'm a self-taught person. I'm also interested in entrepreneurship and startups.",
@@ -56,14 +55,13 @@ export const ui = {
     "meta.description":
       "Ingeniero en Sistemas Computacionales y de Software. Desarrollador web full-stack.",
     "nav.home": "Inicio",
-    "nav.about": "Sobre mí",
+    "nav.education": "Educación",
     "nav.experience": "Experiencia",
     "nav.skills": "Habilidades",
     "nav.projects": "Proyectos",
     "nav.contact": "Contacto",
     "hero.role": "Ingeniero en Sistemas Computacionales y de Software",
     "about.title": "Sobre mí",
-    "about.me": "Yo",
     "about.education": "Educación",
     "about.bio":
       "Me apasionan las ciencias computacionales, la tecnología y el desarrollo de software; el área en la que quiero enfocarme es el desarrollo web full-stack. Siempre estoy dispuesto a aprender algo nuevo y me exijo para mejorar mis habilidades y mi capacidad de resolver problemas. Soy autodidacta y también me interesan el emprendimiento y las startups.",

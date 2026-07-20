@@ -1,11 +1,12 @@
 ---
 import { ContactIcon } from "lucide-react";
 import { getTranslations } from "@/i18n/ui";
+import BooksIcon from "../icons/BooksIcon.astro";
 import BriefcaseIcon from "../icons/BriefcaseIcon.astro";
 import GithubIcon from "../icons/GithubIcon.astro";
 import LinkedInIcon from "../icons/LinkedInIcon.astro";
 import SkillsIcon from "../icons/SkillsIcon.astro";
-import About from "./About.astro";
+import Education from "./Education.astro";
 import Experience from "./Experience.astro";
 import Pill from "./Pill.astro";
 import Skills from "./Skills.astro";
@@ -30,9 +31,6 @@ const t = getTranslations(Astro.currentLocale);
       </Pill>
     </section>
   </section>
-  <section id="about" class="flex flex-col gap-y-4 w-full lg:w-[740px] mx-auto mb-40 px-8">
-    <About />
-  </section>
   <section
     id="experience"
     class="flex flex-col gap-y-8 w-full lg:w-[740px] mx-auto mb-40 px-8"
@@ -42,6 +40,16 @@ const t = getTranslations(Astro.currentLocale);
       {t("experience.title")}
     </h1>
     <Experience />
+  </section>
+  <section
+    id="education"
+    class="flex flex-col gap-y-8 w-full lg:w-[740px] mx-auto mb-40 px-8"
+  >
+    <h1 class="flex justify-center gap-x-2 items-center text-2xl font-bold">
+      <BooksIcon class="size-6" />
+      {t("about.education")}
+    </h1>
+    <Education />
   </section>
   <section id="skills" class="flex flex-col w-full mx-auto mb-20">
     <h1 class="flex justify-center gap-x-2 items-center text-2xl font-bold">
