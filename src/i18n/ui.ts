@@ -27,9 +27,9 @@ export const ui = {
     "experience.wicode.b1":
       "Specialized in TypeScript and cloud microservice architectures. My work centers on building REST APIs with Express and Google Cloud Functions, complemented by frontend experience with React/TypeScript.",
     "experience.wicode.b2":
-      "Led complex enterprise management projects: ERP systems, dashboards and investor metrics, visual productivity tools, and integration and processing platforms.",
+      "Led enterprise management projects: ERP systems, POS, dashboards and investor metrics, visual productivity tools, and integration and processing platforms.",
     "experience.wicode.b3":
-      "Took part in the full application lifecycle, from requirements specification through production deployment, ensuring scalability, security and performance. Delivering high-quality technical solutions that meet both functional and non-functional requirements, keeping the code maintainable and extensible over the long term.",
+      "Took part in the full application and system lifecycle, from requirements specification through production deployment, ensuring scalability, security and performance. Delivering high-quality solutions that meet both business and technical requirements, keeping projects maintainable and extensible over the long term.",
     "experience.kiin.role": "IT Assistant",
     "experience.kiin.dates": "April 2024 - February 2025",
     "experience.kiin.b1":
@@ -75,9 +75,9 @@ export const ui = {
     "experience.wicode.b1":
       "Especializado en TypeScript y arquitecturas de microservicios en la nube. Mi trabajo se centra en el desarrollo de APIs REST con Express y Google Cloud Functions, complementado con experiencia en frontend con React/TypeScript.",
     "experience.wicode.b2":
-      "He liderado proyectos empresariales complejos de gestión como ERP, dashboards y métricas para inversionistas, herramientas de productividad visual, plataformas de integración y procesamiento.",
+      "He liderado proyectos empresariales de gestión como ERP, POS, dashboards y métricas para inversionistas, herramientas de productividad visual, plataformas de integración y procesamiento.",
     "experience.wicode.b3":
-      "He participado en el desarrollo completo del ciclo de vida de aplicaciones, desde la especificación de requisitos hasta el deployment en producción, garantizando escalabilidad, seguridad y performance. Entregando soluciones técnicas de alta calidad que satisfagan tanto requisitos funcionales como no funcionales, manteniendo la mantenibilidad y extensibilidad del código en el largo plazo.",
+      "He participado en el desarrollo completo del ciclo de vida de aplicaciones y sistemas, desde la especificación de requisitos hasta el deployment en producción, garantizando escalabilidad, seguridad y performance. Entregando soluciones de alta calidad que satisfacen tanto requisitos del negocio como los técnicos, la mantenibilidad y extensibilidad del proyecto al largo plazo.",
     "experience.kiin.role": "Auxiliar de TI",
     "experience.kiin.dates": "Abril 2024 - Febrero 2025",
     "experience.kiin.b1":
