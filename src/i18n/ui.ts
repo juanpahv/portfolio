@@ -15,8 +15,7 @@ export const ui = {
     "about.title": "About",
     "about.education": "Education",
     "about.bio":
-      "I'm passionate about computer science, technology and software development, the area I want to focus on is full-stack web development. I'm always willing and searching to learn anything new, I push myself to improve my skills and problem solving abilities, and I'm a self-taught person. I'm also interested in entrepreneurship and startups.",
-    "about.bioHighlight": "full-stack web development",
+      "I'm passionate about technology and software development. I'm always willing and searching to learn anything new, I push myself to improve my skills and problem solving abilities, and I'm a self-taught person. I'm also interested in entrepreneurship and startups.",
     "education.school": "Universidad La Salle Bajío",
     "education.degree": "Software and Computer Systems Engineering",
     "education.dates": "August 2021 - July 2025",
@@ -64,8 +63,7 @@ export const ui = {
     "about.title": "Sobre mí",
     "about.education": "Educación",
     "about.bio":
-      "Me apasiona la tecnología y el so, la tecnología y el desarrollo de software; el área en la que quiero enfocarme es el desarrollo web full-stack. Siempre estoy dispuesto a aprender algo nuevo y me exijo para mejorar mis habilidades y mi capacidad de resolver problemas. Soy autodidacta y también me interesan el emprendimiento y las startups.",
-    "about.bioHighlight": "desarrollo web full-stack",
+      "Me apasiona la tecnología y el desarrollo de software. Siempre estoy dispuesto a aprender algo nuevo y me exijo para mejorar mis habilidades y mi capacidad de resolver problemas. Soy autodidacta y también me interesa el emprendimiento y las startups.",
     "education.school": "Universidad La Salle Bajío",
     "education.degree": "Ingeniería en Sistemas Computacionales y de Software",
     "education.dates": "Agosto 2021 - Julio 2025",

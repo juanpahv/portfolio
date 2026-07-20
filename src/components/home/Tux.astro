@@ -3,8 +3,6 @@ import { getTranslations } from "@/i18n/ui";
 
 const t = getTranslations(Astro.currentLocale);
 const bio = t("about.bio");
-const highlight = t("about.bioHighlight");
-const [before, after] = bio.split(highlight);
 ---
 
 <button
@@ -24,18 +22,18 @@ const [before, after] = bio.split(highlight);
 
 <div id="tux-bio" popover class="bubble">
   <p class="text-base text-pretty">
-    {before}<strong>{highlight}</strong>{after}
+    {bio}
   </p>
 </div>
 
 <style>
   .tux {
     position: fixed;
-    left: 0;
-    bottom: 1.5rem;
+    left: 0.75rem;
+    bottom: 0;
     z-index: 999;
-    /* ponytail: -40% not -50%, the PNG has transparent padding the old inline SVG lacked */
-    transform: translateX(-40%);
+    /* ponytail: sunk below the fold so only the head shows; hover lifts him */
+    transform: translateY(58%);
     transition: transform 300ms ease;
     cursor: pointer;
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
@@ -43,13 +41,19 @@ const [before, after] = bio.split(highlight);
 
   .tux:hover,
   .tux:focus-visible {
-    transform: translateX(-8%);
+    transform: translateY(12%);
+  }
+
+  .tux img {
+    display: block;
+    width: clamp(56px, 8vw, 106px);
+    height: auto;
   }
 
   .bubble {
     position: fixed;
-    left: 4.5rem;
-    bottom: 6rem;
+    left: 5.5rem;
+    bottom: 2rem;
     top: auto;
     right: auto;
     margin: 0;
