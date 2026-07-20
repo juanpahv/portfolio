@@ -42,6 +42,10 @@ export const ui = {
     "skills.frameworks": "Frameworks / Libraries",
     "skills.software": "Software / Tools / Others",
     "contact.title": "Contact",
+    "contact.intro":
+      "Got a project, a role, or just want to say hi? Drop me a line.",
+    "contact.copy": "Copy address",
+    "contact.copied": "Copied",
     "footer.rights": "All Rights Reserved.",
     "404.title": "404 | Page Not Found",
     "404.heading": "Error 404 :(",
@@ -92,6 +96,10 @@ export const ui = {
     "skills.frameworks": "Frameworks / Librerías",
     "skills.software": "Software / Herramientas / Otros",
     "contact.title": "Contacto",
+    "contact.intro":
+      "¿Tienes un proyecto, una vacante o simplemente quieres saludar? Escríbeme.",
+    "contact.copy": "Copiar dirección",
+    "contact.copied": "Copiado",
     "footer.rights": "Todos los derechos reservados.",
     "404.title": "404 | Página no encontrada",
     "404.heading": "Error 404 :(",
