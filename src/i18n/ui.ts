@@ -64,7 +64,7 @@ export const ui = {
     "about.title": "Sobre mí",
     "about.education": "Educación",
     "about.bio":
-      "Me apasionan las ciencias computacionales, la tecnología y el desarrollo de software; el área en la que quiero enfocarme es el desarrollo web full-stack. Siempre estoy dispuesto a aprender algo nuevo y me exijo para mejorar mis habilidades y mi capacidad de resolver problemas. Soy autodidacta y también me interesan el emprendimiento y las startups.",
+      "Me apasiona la tecnología y el so, la tecnología y el desarrollo de software; el área en la que quiero enfocarme es el desarrollo web full-stack. Siempre estoy dispuesto a aprender algo nuevo y me exijo para mejorar mis habilidades y mi capacidad de resolver problemas. Soy autodidacta y también me interesan el emprendimiento y las startups.",
     "about.bioHighlight": "desarrollo web full-stack",
     "education.school": "Universidad La Salle Bajío",
     "education.degree": "Ingeniería en Sistemas Computacionales y de Software",
