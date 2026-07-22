@@ -25,11 +25,13 @@ export const ui = {
     "experience.wicode.role": "Fullstack Developer",
     "experience.wicode.dates": "July 2025 - Present",
     "experience.wicode.b1":
-      "Specialized in TypeScript and cloud microservice architectures. My work centers on building REST APIs with Express and Google Cloud Functions, complemented by frontend experience with React/TypeScript.",
+      "Specialized in JavaScript/TypeScript and cloud microservice architectures. My work centers on building REST APIs with Express and Google Cloud Functions, developing user interfaces with React, and manual and automated testing with Vitest and Playwright.",
     "experience.wicode.b2":
-      "Led enterprise management projects: ERP systems, POS, dashboards and investor metrics, visual productivity tools, and integration and processing platforms.",
+      "Built AI agent pipelines with Spec-Driven Development and OpenAPI Spec, automating feature implementation and unit test generation.",
     "experience.wicode.b3":
-      "Took part in the full application and system lifecycle, from requirements specification through production deployment, ensuring scalability, security and performance. Delivering high-quality solutions that meet both business and technical requirements, keeping projects maintainable and extensible over the long term.",
+      "Led the development of high-impact enterprise solutions: ERPs, POS systems, dashboards and investor reports, productivity tools, and data integration platforms.",
+    "experience.wicode.b4":
+      "Took part in every phase of the software lifecycle, from design to production, prioritizing scalability, maintainability, security and performance, and delivering solutions that meet both business and technical requirements.",
     "experience.kiin.role": "IT Assistant",
     "experience.kiin.dates": "April 2024 - February 2025",
     "experience.kiin.b1":
@@ -79,11 +81,13 @@ export const ui = {
     "experience.wicode.role": "Desarrollador Fullstack",
     "experience.wicode.dates": "Julio 2025 - Actualidad",
     "experience.wicode.b1":
-      "Especializado en TypeScript y arquitecturas de microservicios en la nube. Mi trabajo se centra en el desarrollo de APIs REST con Express y Google Cloud Functions, complementado con experiencia en frontend con React/TypeScript.",
+      "Especializado en Javascript/Typescript y arquitecturas de microservicios en la nube. Mi trabajo se centra en el desarrollo de APIs REST con Express y Google Cloud Functions, desarrollo de interfaces de usuario con React, pruebas manuales y automatizadas con Vitest y Playwright.",
     "experience.wicode.b2":
-      "He liderado proyectos empresariales de gestión como ERP, POS, dashboards y métricas para inversionistas, herramientas de productividad visual, plataformas de integración y procesamiento.",
+      "He desarrollado pipelines de agentes de IA con Spec-Driven Development y OpenAPI Spec, automatizando la implementación de funcionalidades y generación de pruebas unitarias.",
     "experience.wicode.b3":
-      "He participado en el desarrollo completo del ciclo de vida de aplicaciones y sistemas, desde la especificación de requisitos hasta el deployment en producción, garantizando escalabilidad, seguridad y performance. Entregando soluciones de alta calidad que satisfacen tanto requisitos del negocio como los técnicos, la mantenibilidad y extensibilidad del proyecto al largo plazo.",
+      "He liderado el desarrollo de soluciones empresariales de alto impacto: ERPs, sistemas POS, dashboards e informes para inversores, herramientas de productividad y plataformas de integración de datos.",
+    "experience.wicode.b4":
+      "He participado en todas las fases del ciclo de vida del software, desde diseño hasta producción, priorizando escalabilidad, mantenibilidad, seguridad y rendimiento, y entregando soluciones que cumplen tanto los requisitos del negocio como los técnicos.",
     "experience.kiin.role": "Auxiliar de TI",
     "experience.kiin.dates": "Abril 2024 - Febrero 2025",
     "experience.kiin.b1":
