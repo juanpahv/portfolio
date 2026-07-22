@@ -91,10 +91,25 @@ const bio = t("about.bio");
     }
   }
 
+  /* No hover on touch: the sink-and-lift trick can never resolve, and mobile
+     browser chrome overlays the sunk strip. Sit him fully above the safe area. */
+  @media (hover: none) {
+    .tux {
+      bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+      transform: none;
+    }
+
+    .tux:hover,
+    .tux:focus-visible {
+      transform: none;
+    }
+  }
+
   @media (max-width: 640px) {
     .bubble {
       left: 1rem;
       right: 1rem;
+      bottom: calc(6rem + env(safe-area-inset-bottom, 0px));
       max-width: none;
     }
   }

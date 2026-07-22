@@ -23,7 +23,8 @@ const { title = t("meta.title"), description = t("meta.description") } =
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0a" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link rel="alternate" hreflang="es" href={new URL("/", Astro.site ?? Astro.url)} />
@@ -49,6 +50,10 @@ const { title = t("meta.title"), description = t("meta.description") } =
   html {
     font-family: "Onest Variable", system-ui, sans-serif;
     scroll-behavior: smooth;
+    /* Propagates to the page canvas: fixes white overscroll and the mobile
+       browser bar sampling a background the gradient div never painted. */
+    background-color: #0a0a0a;
+    color-scheme: dark;
   }
 
   body {
